@@ -5,15 +5,21 @@ if __name__ == '__main__':
     window.bgcolor('white')
 
     # This code makes a new Turtle. Pick a new name for the turtle
-    my_turtle = turtle.Turtle()
+    turt = turtle.Turtle()
 
     # Make your turtle's shape 'turtle', .shape('turtle')
-
+    turt.shape('turtle')
     # Set your turtle's speed using .speed(2)
-
+    turt.speed(2)
     # Set your turtle's color using .color('green') and .pencolor('blue')
-
+    turt.color('green')
+    turt.pencolor('blue')
     # Move your turtle forward using .forward(100)
+    i = 0
+    while i < 4 :
+        turt.forward(100)
+        turt.right(90)
+        i+=1
     # TEST    Did your turtle move forward?
 
     # Move your turtle left or right using .left(90) or .right(90)

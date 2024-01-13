@@ -21,32 +21,34 @@ if __name__ == '__main__':
     colors = ('red', 'blue', 'green', 'yellow', 'orange')
     
     # Make a new turtle
-    
+    turt = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    turt.shape('turtle')
     # Set the turtle speed to max (0)
-    
+    turt.speed(0)
     # Set the turtle width to 1
-    
+    turt.width(1)
     # Create a variable to hold the number of sides in a pentagon
-    
+    x = 5
     # Create a variable to be the angle of 360 divided by the sides variable
-    
+    angle = 360/5
     # Use a for loop to repeat ALL the following lines of code 360 times. 
-        
+    for i in range(360):
         # If the loop variable (i) is equal to 100, set the turtle width to 2
-        
+        if i == 100:
+            turt.width(2)
         # If the loop variable (i) is equal to 200, set the turtle width to 3
-        
+        elif i == 200:
+            turt.width(3)
         # Use the get_next_color function to set the turtle pencolor,
         # *hint .pencolor(get_next_color(i))
-        
+        turt.pencolor(get_next_color(i))
         # Move the turtle forward by the loop variable, *hint .forward(i)
-        
+        turt.forward(i)
         # Turn the turtle to the right by the angle variable + 1
-
+        turt.right(angle+1)
     # Hide your turtle so you can see the pattern.
-        
+        turt.hideturtle()
     # Check the pattern against the picture in the recipe. If it matches, you are done!
     
     # Variations:
